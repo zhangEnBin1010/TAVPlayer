@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TAVPlayer_Example' do
+  pod 'TAVPlayer', :path => '../'
+
+  target 'TAVPlayer_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
